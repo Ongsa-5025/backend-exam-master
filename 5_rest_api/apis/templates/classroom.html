@@ -1,0 +1,15 @@
+<h1>School</h1>
+
+<table border="1">
+  {% for school in school_list %}
+  <tr>
+    <td>{{ school.school_name }}</td>
+    <td>{{ school.school_short_name }}</td>
+    <td>{{ school.address }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<p>
+  <a href="add/">Add school</a>
+</p>

@@ -1,0 +1,20 @@
+<h1>School</h1>
+
+<form method="GET" action="{% url 'index' %}">
+  {{ form.as_p }}
+  <input type="submit" value="Submit" class="btn btn-primary" />
+</form>
+
+<table border="1">
+  {% for school in school_list %}
+  <tr>
+    <td>{{ school.school_name }}</td>
+    <td>{{ school.school_short_name }}</td>
+    <td>{{ school.address }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<p>
+  <a href="add/">Add school</a>
+</p>

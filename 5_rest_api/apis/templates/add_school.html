@@ -1,0 +1,14 @@
+<h1>Add school</h1>
+
+<form action="addSchool/" method="post">
+  {% csrf_token %} School Name:<br />
+  <input name="school_name" />
+  <br /><br />
+  School Short Name:<br />
+  <input name="school_short_name" />
+  <br /><br />
+  Address:<br />
+  <input name="address" />
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
